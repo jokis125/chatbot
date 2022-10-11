@@ -41,7 +41,7 @@ def chat_bot():
 
 
 def chat_bot_audio(person1, person2, conversation_string):
-    openai.api_key = "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"
+    openai.api_key = os.getenv('OPENAI_API_KEY')
     model = whisper.load_model("small.en")
 
     question = ""
