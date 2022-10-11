@@ -8,7 +8,7 @@ import pyttsx3
 
 
 def chat_bot():
-    openai.api_key = "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"
+    openai.api_key = os.getenv('OPENAI_API_KEY')
 
     
     question = ""
